@@ -16,6 +16,10 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 libraryDependencies += "be.objectify" %% "deadbolt-scala" % "2.4.2"
 
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "2.2.6" % "test",
+  "org.scalatestplus" %% "play" % "1.4.0-M3" % "test"
+)
 
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
