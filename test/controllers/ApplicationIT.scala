@@ -16,7 +16,8 @@ class ApplicationIT extends FunSpec with ShouldMatchers {
 
     it ("should send 404 on a bad request") {
       running(FakeApplication()) {
-        route(FakeRequest(GET, "/boum")) should be (None)
+        val bad = route(FakeRequest(GET, "/boum")).get
+        status(bad) should be (NOT_FOUND)
       }
     }
 
