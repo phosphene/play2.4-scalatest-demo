@@ -10,6 +10,14 @@ Build requirements:
 * [sbt](http://www.scala-sbt.org) 0.13.9
 
 
+We have suspended using the artima plugin for [scalatest](http://www.scalatest.org/install)
+
+we do not yet need to add the following line to ~/.sbt/0.13/global.sbt:
+
+<!-- language: lang-none -->
+    resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+
+
 
 Then the project should build normally:
 
