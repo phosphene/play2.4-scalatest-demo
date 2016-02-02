@@ -7,7 +7,6 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-  jdbc,
   cache,
   ws,
   specs2 % Test
@@ -18,7 +17,10 @@ libraryDependencies += "be.objectify" %% "deadbolt-scala" % "2.4.2"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
-  "org.scalatestplus" %% "play" % "1.4.0-M3" % "test"
+  "org.scalatestplus" %% "play" % "1.4.0-M3" % "test",
+  "com.typesafe.play" %% "play-slick" % "1.1.1",
+  "com.typesafe.play" %% "play-slick-evolutions" % "1.1.1",
+  "com.h2database" % "h2" % "1.3.176"
 )
 
 
