@@ -1,7 +1,6 @@
 package controllers
 
 import org.scalatest._
-import org.scalatest.matchers.ShouldMatchers
 
 import play.api.test._
 import play.api.test.Helpers._
@@ -9,7 +8,7 @@ import play.api.test.Helpers._
 /**
  * A functional test will fire up a whole play application in a real (or headless) browser
  */
-class ApplicationFT extends FunSpec with ShouldMatchers {
+class ApplicationFT extends FunSpec with Matchers {
   
   describe ("Application") {
     
